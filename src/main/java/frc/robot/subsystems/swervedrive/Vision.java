@@ -345,6 +345,7 @@ public class Vision
                                Units.inchesToMeters(8.44)),
              VecBuilder.fill(4, 4, 8), VecBuilder.fill(0.5, 0.5, 1)),
     /**
+     * 
      * Right Camera
      */
     RIGHT_CAM("right",
@@ -356,7 +357,7 @@ public class Vision
     /**
      * Center Camera
      */
-    CENTER_CAM("center",
+    CENTER_CAM("Vision",
                new Rotation3d(0, Units.degreesToRadians(18), 0),
                new Translation3d(Units.inchesToMeters(-4.628),
                                  Units.inchesToMeters(-10.687),

@@ -154,7 +154,7 @@ public class RobotContainer
       driverXbox.start().whileTrue(Commands.none());
       driverXbox.back().whileTrue(Commands.none());
       driverXbox.leftBumper().whileTrue(Commands.runOnce(drivebase::lock, drivebase).repeatedly());
-      driverXbox.rightBumper().whileTrue(drivebase.aimAtTarget());
+      //driverXbox.rightBumper().whileTrue(drivebase.aimAtTarget(null));
     }
 
   }
@@ -167,7 +167,7 @@ public class RobotContainer
   public Command getAutonomousCommand()
   {
     // An example command will be run in autonomous
-    return drivebase.getAutonomousCommand("New Auto");
+    return drivebase.getAutonomousCommand("autoTest");
   }
 
   public void setMotorBrake(boolean brake)
